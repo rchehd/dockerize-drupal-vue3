@@ -19,6 +19,8 @@ To spin up the whole application for the first time in dev mode:
 ```sh
 $ git clone https://github.com/rchehd/dockerize-drupal-vue3.git
 $ cd dockerize-drupal-vue3
+$ copy .env.default to .env
+$ set project name in .end PROJECT_NAME=your_project_name
 # 
 # Install all the docker containers:
 $ make install
