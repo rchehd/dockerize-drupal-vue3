@@ -24,6 +24,7 @@ $ set project name in .end PROJECT_NAME=your_project_name
 # 
 # Install all the docker containers:
 $ make install
+#  if you get error change owner of drupal directory "sudo chmod -R 777 drupal"
 #
 # To destroy all containers and data associated:
 $ make down

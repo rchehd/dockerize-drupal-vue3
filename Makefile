@@ -109,6 +109,7 @@ prepare\:platformsh:
 ###################################
 
 install:
+
 	@$(MAKE) -s prepare\:frontend
 	@$(MAKE) -s up
 	@$(MAKE) -s prepare\:backend
@@ -221,8 +222,6 @@ code\:check:
       -v $(shell pwd)/drupal/.eslintrc.json:/eslint/.eslintrc.json \
       $(DOCKER_ESLINT) .
 
-	$(call message,$(PROJECT_NAME): Checking React.js code for compliance with coding standards...)
-	docker-compose run -T --rm node yarn --silent run eslint
 
 code\:fix:
 	$(call message,$(PROJECT_NAME): Auto-fixing Drupal PHP code issues...)
@@ -237,8 +236,6 @@ code\:fix:
       -v $(shell pwd)/drupal/.eslintrc.json:/eslint/.eslintrc.json \
       $(DOCKER_ESLINT) --fix .
 
-	$(call message,$(PROJECT_NAME): Auto-fixing React.js code issues...)
-	docker-compose run -T --rm node yarn --silent run eslint --fix
 
 #######################
 # Frontend operations #
