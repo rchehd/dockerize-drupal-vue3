@@ -1,13 +1,23 @@
 {
-    "name": "rchehd/dockerize-drupal-vue3",
-    "description": "Project template for quick start with headless Drupal and VueJS 3.",
+    "name": "nicer00ster/dockerize_drupal_vue",
+    "description": "Project template for quick start with headless Drupal and VueJS.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "Roman Chekhaniuk",
-            "email": "romachehdkdk@gmail.com",
+            "name": "Alex Busch",
+            "email": "abusch1013@gmail.com",
             "role": "Developer"
+        },
+        {
+            "name": "Peppy Guneva",
+            "email": "fake@email.com",
+            "role": "Developer"
+        },
+        {
+            "name": "@xasz",
+            "email": "fake@email.com",
+            "role": "DevOps"
         }
     ],
     "repositories": [
